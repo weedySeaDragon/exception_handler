@@ -141,7 +141,7 @@ module ExceptionHandler
 
           # => Trace
           def trace
-            exception.backtrace.join("\n")
+            exception&.backtrace.nil? ? '' :  exception.backtrace.join("\n")
           end
 
         ####################################
