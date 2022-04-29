@@ -43,7 +43,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.1.0"
 
   ## Runtime
-  s.add_dependency "bundler"
+  s.add_dependency "bundler", '~> 2'
   # s.add_dependency "rails",      ">= 4.2.0"
 
   rails_version = ENV["RAILS_VERSION"] || "default"
