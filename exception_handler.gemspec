@@ -51,7 +51,7 @@ Gem::Specification.new do |s|
             when "master"
               {github: "rails/rails"}
             when "default"
-              ">= 5.0"
+              ">= 5.2 < 6"
             else
               "~> #{rails_version}"
           end
