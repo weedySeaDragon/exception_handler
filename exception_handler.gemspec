@@ -44,19 +44,7 @@ Gem::Specification.new do |s|
 
   ## Runtime
   s.add_dependency "bundler", '~> 2'
-  # s.add_dependency "rails",      ">= 4.2.0"
-
-  rails_version = ENV["RAILS_VERSION"] || "default"
-  rails = case rails_version
-            when "master"
-              {github: "rails/rails"}
-            when "default"
-              ">= 5.2 < 6"
-            else
-              "~> #{rails_version}"
-          end
-
-  s.add_dependency gem "rails", rails
+  s.add_dependency "rails", ">= 5.2.1"
 
   s.add_dependency "responders"
 

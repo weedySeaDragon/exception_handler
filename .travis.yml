@@ -1,15 +1,16 @@
 language: ruby
-#cache: bundler
+
+before_install:
+ # install bundler 2.x
+ - gem install bundler
 
 rvm:
  - 2.6.6
  - ruby-head
+gemfile:
+ - gemfiles/rails-5.2.gemfile
+ - gemfiles/rails-6.0.gemfile
 
-env:
-  - "RAILS_VERSION=5.2.1"
-#  - "RAILS_VERSION=6.0.1"
-#  - "RAILS_VERSION=6.1.0"
-#  - "RAILS_VERSION=7.0.0"
 
 notifications:
     - false
