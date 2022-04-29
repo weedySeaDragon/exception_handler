@@ -140,8 +140,10 @@ module ExceptionHandler
 
         # => Validation
         raise ExceptionHandler::Error, "Email Not Valid" if @email && !@email.nil? && !@email.is_a?(String)
-        raise ExceptionHandler::Error, "Migration Required → \"#{db}\" doesn't exist" if @db && !ActiveRecord::Base.connection.table_exists?(db) && (File.basename($0) != "rake" && !ARGV.include?("db:migrate"))
 
+        # Because this initialization can be called before a Rails application has been initialized (e.g. with a rake db:create task),
+        # do not establish a DB connection here.
+        # raise ExceptionHandler::Error, "Migration Required → \"#{db}\" doesn't exist" if @db && !ActiveRecord::Base.connection.table_exists?(db) && (File.basename($0) != "rake" && !ARGV.include?("db:migrate"))
       end
 
     ###########################################
