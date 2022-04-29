@@ -6,7 +6,7 @@ gem "rails", "~> 6.0.0"
 
 #For Testing
 group :test do
-	gem 'coveralls', require: false
+	# gem 'coveralls', require: false
 end
 
 # => Required for Windows
