@@ -36,7 +36,6 @@ RSpec.describe ExceptionHandler::Engine do
       describe "version" do
         subject { version }
         it { is_expected.not_to be_empty }
-        it { is_expected.to eq('0.8.1.0') }
       end
 
       # => Loaded?
@@ -44,7 +43,6 @@ RSpec.describe ExceptionHandler::Engine do
       describe "class" do
         subject { engine }
         it { should be_const_defined('ExceptionHandler') }
-        it { }
       end
 
     end
