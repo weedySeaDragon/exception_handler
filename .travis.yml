@@ -6,10 +6,10 @@ rvm:
  - ruby-head
 
 env:
-  - "RAILS_VERSION=5.2"
-  - "RAILS_VERSION=6.0"
-#  - "RAILS_VERSION=6.1"
-#  - "RAILS_VERSION=7.0"
+  - "RAILS_VERSION=5.2.1"
+#  - "RAILS_VERSION=6.0.1"
+#  - "RAILS_VERSION=6.1.0"
+#  - "RAILS_VERSION=7.0.0"
 
 notifications:
     - false
