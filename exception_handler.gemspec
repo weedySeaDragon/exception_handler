@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
 
   ## General ##
   s.name                  = "exception_handler"
-  s.authors               = ["R.Peck"]
-  s.email                 = ["rpeck@fl.co.uk"]
+  s.authors               = ["R.Peck", "Ashley Engelund"]
+  s.email                 = ["rpeck@fl.co.uk", "ashley.engelund@gmail.com"]
   s.version               = ExceptionHandler::VERSION::STRING
   s.platform              = Gem::Platform::RUBY
 
