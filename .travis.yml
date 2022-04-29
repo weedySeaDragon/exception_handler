@@ -1,15 +1,15 @@
 language: ruby
-cache: bundler
+#cache: bundler
 
 rvm:
  - 2.6.6
  - ruby-head
 
 env:
-  - "RAILS_VERSION= 5.2"
+  - "RAILS_VERSION=5.2"
   - "RAILS_VERSION=6.0"
-  - "RAILS_VERSION=6.1"
-  - "RAILS_VERSION=7.0"
+#  - "RAILS_VERSION=6.1"
+#  - "RAILS_VERSION=7.0"
 
 notifications:
     - false
