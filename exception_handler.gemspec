@@ -44,7 +44,20 @@ Gem::Specification.new do |s|
 
   ## Runtime
   s.add_dependency "bundler"
-  s.add_dependency "rails",      ">= 4.2.0"
+  # s.add_dependency "rails",      ">= 4.2.0"
+
+  rails_version = ENV["RAILS_VERSION"] || "default"
+  rails = case rails_version
+            when "master"
+              {github: "rails/rails"}
+            when "default"
+              ">= 5.0"
+            else
+              "~> #{rails_version}"
+          end
+
+  s.add_dependency gem "rails", rails
+
   s.add_dependency "responders"
 
   ## Extras ##
@@ -54,7 +67,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
   s.add_development_dependency "rspec-rails"
-  s.add_development_dependency "coveralls"  
+  s.add_development_dependency "coveralls"
   s.add_development_dependency "sqlite3", ">= 1.3.10"
 
 ##############################################################
