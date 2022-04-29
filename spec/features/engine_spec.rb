@@ -36,7 +36,7 @@ RSpec.describe ExceptionHandler::Engine do
       describe "version" do
         subject { version }
         it { is_expected.not_to be_empty }
-        it { is_expected.to eq('0.8.0.0') }
+        it { is_expected.to eq('0.8.1') }
       end
 
       # => Loaded?
