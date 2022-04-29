@@ -13,8 +13,8 @@
 
 # => Coveralls
 # => https://docs.coveralls.io/
-require 'coveralls'
-Coveralls.wear!('rails')
+# require 'coveralls'
+# Coveralls.wear!('rails')
 
 ###############################################
 ###############################################
